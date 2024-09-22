@@ -1,0 +1,82 @@
+.logo img {
+    width: 100%; /* ปรับให้ขนาดเป็นเปอร์เซ็นต์ของ container */
+    max-height: 100px;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    background: transparent;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-item:hover .nav-link:hover {
+    color: rgb(112, 112, 112) !important;
+}
+
+.banner_top {
+    background-color: rgb(0, 217, 255);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.header_about {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_top h1 {
+    font-size: 70px !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
+}
+
+.card-header:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.header_text:hover {
+    color: #ffa32a !important;
+}
+
+.header_about {
+    animation: myAnim1 2s ease 0s 1 normal forwards;
+    font-size: 70px !important;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes myAnim1 {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

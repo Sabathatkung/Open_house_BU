@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/homepage_style.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light background">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">
+            <img src="img\BU_Logo_no_shadow-positive1.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fs-2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="open_house.html">About</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="speaker.html">Speaker</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="workshops.html">Workshops</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="registration.html">Registration</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white fs-4" href="sponsors.html">Sponsors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Body Start -->
+      <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img\maxresdefault.jpg" class="d-block w-100 carousel-image" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\og_main.jpg" class="d-block w-100 carousel-image" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\BU_open.jpg" class="d-block w-100 carousel-image" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container text-center mt-5">
+          <h1 class="mb-2 bg-dark text-white myAnim_active">ACTIVITIES</h1>
+          <div class="row">
+              <div class="col-4">
+                  <!-- Button trigger modal -->
+                  <img src="img/1.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" alt="">
+      
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">PRO-CENTER</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body d-flex column_fix">
+                                  <img src="img/1.jpg" alt="">
+                                  <div class="flex-column">
+                                    <h1 class="ms-3 mb-3 fs-1 fw-b">ลองรู้จักตนเอง</h1>
+                                    <p class="ms-3 fs-3">จุดเริ่มต้นเส้นทางการลองที่ทุกคนจะได้เจอบริเวณอาคาร A3 เป็นจุดลงทะเบียนกลาง พร้อมให้ข้อมูลเกี่ยวกับคณะและสาขาต่าง ๆ มีรุ่นพี่แนะนำกิจกรรมไฮไลต์น่าสนใจ และตารางเวลาทั้งหมด อีกทั้งยังมีของเด็ดรอให้ไปลองเล่นคือ ‘FIND YOUR PRO-PASSION QUIZ’ ที่จะพาทุกคนรู้จักความชอบของตัวเองมากขึ้น คลัสเตอร์ไหน คณะไหนที่เหมาะกับคุณ และเป็นตัวช่วยปักหมุดเส้นทางให้ได้ไปลองเล่นที่คณะต่าง ๆ ได้ง่ายกว่าเดิม นอกจากนี้ยังมี PRO-STAGE เป็นกิจกรรมกลางไว้ให้ทุกคนได้มาเอ็นจอยกันอีกด้วย</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="col-4">
+                  <!-- Button trigger modal -->
+                  <img src="img/2.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" alt="">
+      
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">CLUSTER CENTER</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body d-flex column_fix">
+                                <img src="img/2.jpg" alt="">
+                                <div class="flex-column">
+                                  <h1 class="ms-3 mb-3 fs-1 fw-b">ลองหาแพชชัน</h1>
+                                  <p class="ms-3 fs-3">มาลองหาคณะที่ใช่ สาขาและกิจกรรมที่อยากลองได้ที่จุดนี้ Cluster Center จุดรวมพลของคนมี DNA เดียวกัน ไม่ว่าจะ Business Creative Innovative และ BU International ด้วย Character ที่ออกแบบมาโดยเฉพาะ ช่วยบอกตำแหน่งของแต่ละคลัสเตอร์กระจายตามที่ต่าง ๆ เป็นจุดให้ข้อมูลรายชื่อคณะ พร้อมตารางกิจกรรมในคลัสเตอร์นั้น ๆ</p>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="col-4">
+                  <!-- Button trigger modal -->
+                  <img src="img/3.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" alt="">
+      
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">PRO-ACTIVITIES</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body d-flex column_fix">
+                                <img src="img/3.jpg" alt="">
+                                <div class="flex-column">
+                                  <h1 class="ms-3 mb-3 fs-1 fw-b">ลองฝึกทําจริง</h1>
+                                  <p class="ms-3 fs-3">พื้นที่ของการลองเล่นเพื่อหาความโปรให้กับแพชชันที่ชอบ ด้วยกิจกรรมมากมายหลากหลายเต็มไปหมดจากคณะสาขาต่าง ๆ เปิดโอกาสให้ทุกคนที่มาเข้าร่วมได้ลองคิดจริง ลองจับอุปกรณ์จริง ลองลงมือทําจริง ได้ความรู้จากอาจารย์ตัวจริงในสาขา และเปิดโลกไปกับ Pro-Partner ของ BU ที่เชี่ยวชาญของจริง และมีรุ่นพี่คอยพูดคุย ดูแล แชร์ประสบการณ์ชีวิตมหาลัยของจริงให้ทุกคนสนุกไปด้วยกัน เป็นการลองเล่นให้เป็นโปร สัมผัสประสบการณ์ของจริงที่ไม่เคยลองได้ที่ไหนนอกจากที่ BU OPEN HOUSE นี้</p>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-4">
+                <!-- Button trigger modal -->
+                <img src="img/4.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" alt="">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">PRO-CERTIFICATE</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex column_fix">
+                              <img src="img/4.jpg" alt="">
+                              <div class="flex-column">
+                                <h1 class="ms-3 mb-3 fs-1 fw-b">ลองล่าใบเซอร์ใส่พอร์ต</h1>
+                                <p class="ms-3 fs-3">ไฮไลต์สําคัญอีกอย่างหนึ่งในปีนี้นอกจากการลองเล่นอย่างสมจริงแล้ว อีกหนึ่งของสําคัญที่จะได้กลับไปคือ ‘E-Certificate’ ช่วยการันตีความโปรที่คุณได้ลองมากมาย ด้วยการสแกน <br>QR-Code ที่จุดร่วมกิจกรรม เพื่อรับใบเซอร์กลับไปสะสมลงพอร์ตอัปสกิลกันอย่างปัง ๆ ได้เลย</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <!-- Button trigger modal -->
+                <img src="img/5.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" alt="">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">FLAVORFUL FAIR</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex column_fix">
+                              <img src="img/5.jpg" alt="">
+                              <div class="flex-column">
+                                <h1 class="ms-3 mb-3 fs-1 fw-b">ลองชิมร้านมือโปร</h1>
+                                <p class="ms-3 fs-3">มา BU OPEN HOUSE ปีนี้ไม่มีอด นอกจากจะได้ลองเล่นระดับโปรแล้ว เรายังมีร้านอาหารสุด Pro ที่มีชื่อเสียงทั่วประเทศ ทั้งคาวหวานมาให้ได้ลองชิมกันถึงที่ นอกจากนี้ยังโชว์ความ Pro ด้วยร้านอาหารชื่อดังที่เป็นผลงานศิษย์เก่ามหาวิทยาลัยกรุงเทพอีกด้วย เช่น ฉันจะกินชาเย็นทุกวัน</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <!-- Button trigger modal -->
+                <img src="img/6.jpg" class="btn d-block img_custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" alt="">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-1 text-center" id="staticBackdropLabel1" style="width: 100%;">FANCY NIGHT</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex column_fix">
+                              <img src="img/6.jpg" alt="">
+                              <div class="flex-column">
+                                <h1 class="ms-3 mb-3 fs-1 fw-b">ลองสนุกให้สุด</h1>
+                                <p class="ms-3 fs-3">หลังจากลองเล่นกับทุกกิจกรรมแล้ว มาปิดท้ายวันด้วยคอนเสิร์ตให้มันส์สุดเหวี่ยง กับศิลปินสุด Pro ชื่อดังที่รอให้ทุกคนมาสนุกให้สุดไปกับคอนเสิร์ตและโชว์พิเศษ ไม่ว่าจะ 4EVE, DICE, MXFRUIT, DIDIxDADA, FELLOW FELLOW, BAMM พร้อมเอ็นจอยกับอาหารหลากหลายที่จะมาช่วยเติมพลังก่อนกลับบ้าน</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+      
+      </main>
+      <!-- Body End -->
+
+      <!-- Footer Start -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="homepage.html" class="nav-link px-2 text-body-secondary text-white">Home</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-secondary text-white">FAQs</a></li>
+            <li class="nav-item"><a href="open_house.html" class="nav-link px-2 text-body-secondary text-white">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary text-white">© 2024 BU Open House, Inc</p>
+        </footer>
+      </div>
+      <!-- Footer End -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

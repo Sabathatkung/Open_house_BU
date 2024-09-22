@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+.logo img {
+    width: 100%; /* ปรับให้ขนาดเป็นเปอร์เซ็นต์ของ container */
+    max-height: 100px;
+    height: 100%;
+}
+
+.background {
+    background: transparent;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-item:hover .nav-link:hover {
+    color: rgb(112, 112, 112) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
+}
+
+.custom-modal {
+    max-width: 1235px; /* ปรับขนาดตามที่ต้องการ */
+    width: 100%; /* ให้เต็มความกว้างในขนาดที่กำหนด */
+}
+
+.img_custom {
+    margin-top: 30px;
+    max-width: 500px; /* ปรับขนาดตามที่ต้องการ */
+    max-height: 400px;
+    height: 100%;
+    width: 100%; /* ให้เต็มความกว้างในขนาดที่กำหนด */
+    transition: transform 0.2s;
+}
+
+.img_custom:hover {
+    transform: translateY(-15px);
+}
+
+.carousel-image {
+    max-height: 1000px;
+    object-fit: cover; /* ทำให้ภาพขยายให้เต็มพื้นที่โดยไม่เสียสัดส่วน */
+}
+
+.myAnim_active {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 768px) {
+    .column_fix{
+        flex-direction: column;
+    }
+}
