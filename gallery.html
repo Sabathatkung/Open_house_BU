@@ -52,11 +52,190 @@
     </nav>
     <!-- Navbar End -->
 
+
+
     <!-- Body Start -->
-    <main>
-        <!-- เอาเนื้อหาของตัวเองมาใส่ในนี้ -->
-    </main>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lightbox Gallery Example</title>
+    
+        <!-- MDB Bootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
+        <style>
+            /* Custom style for lightbox */
+            .lightbox {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9); /* Darker background */
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+    
+            .lightbox img {
+                max-width: 95%; /* Larger max width for lightbox images */
+                max-height: 95%; /* Larger max height for lightbox images */
+                transition: transform 0.2s ease;
+                border-radius: 10px; /* Slightly rounded corners */
+            }
+    
+            /* Grid Layout for Gallery */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+                grid-template-areas:
+                    "small1 large small2"
+                    "small3 large small4"
+                    "small5 large small6";
+                justify-items: center;
+                padding: 20px;
+                max-width: 1600px;
+                margin: 0 auto;
+            }
+    
+            .gallery img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                transition: transform 0.3s ease;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+    
+            .gallery img:hover {
+                transform: scale(1.1);
+            }
+    
+            /* Image Sizes */
+            .small {
+                height: 300px;
+            }
+    
+            .large {
+                grid-column: span 3;
+                height: 600px;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 768px) {
+                .gallery {
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                        "large"
+                        "small1"
+                        "small2"
+                        "small3"
+                        "small4"
+                        "small5"
+                        "small6";
+                }
+    
+                .large {
+                    height: 400px;
+                }
+    
+                .small {
+                    height: 250px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <section class="p-4 text-center">
+            <div class="gallery">
+                <div style="grid-area: small1;">
+                    <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1667963362_GQ4F4IJMZH.png')">
+                        <img src="img/gallery8.png" alt="Image 1" class="small">
+                    </a>
+                </div>
+                <div style="grid-area: large;">
+                    <a href="#" onclick="openLightbox('https://connect.bu.ac.th/storage/2022/11/17.jpeg')">
+                        <img src="img/gallery9.jpeg" alt="Large Image" class="large">
+                    </a>
+                </div>
+                <div style="grid-area: small2;">
+                    <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1667979144_TQ913CXZB7.png')">
+                        <img src="img/gallery7.png" alt="Image 2" class="small">
+                    </a>
+                </div>
+    
+                <div style="grid-area: small3;">
+                    <a href="#" onclick="openLightbox('https://www.igloostudio.com/wp-content/uploads/2024/09/PR-Website-Thumbnail-Template-1.jpg')">
+                        <img src="img/gallery1.webp" alt="Image 3" class="small">
+                    </a>
+                </div>
+                <div style="grid-area: small4;">
+                    <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1699953123_OORG8OIRLB.png')">
+                        <img src="img/gallery2.png" alt="Image 4" class="small">
+                    </a>
+                </div>
+    
+                <div style="grid-area: small5;">
+                    <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1699952161_O40LGSODN2.png')">
+                        <img src="img/gallery4.png" alt="Image 5" class="small">
+                    </a>
+                </div>
+                <div style="grid-area: small6;">
+                    <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1567479072_WZWJXJQUBF.jpg')">
+                        <img src="img/gallery5.jpg" alt="Image 6" class="small">
+                    </a>
+                </div>
+                <div style="grid-area: small6;">
+                  <a href="#" onclick="openLightbox('https://contents.bu.ac.th/uploads/files/1567479072_WZWJXJQUBF.jpg')">
+                      <img src="img\gallery6.webp" alt="Image ึ" class="small">
+                  </a>
+              </div>
+            </div>
+        </section>
+    
+        <!-- Custom Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+        </div>
+    
+        <!-- MDB Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+        <script>
+            // Function to open the Lightbox with the selected image
+            function openLightbox(imageSrc) {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImage = document.getElementById('lightbox-image');
+                lightboxImage.src = imageSrc; // Set the source of the lightbox image
+                lightbox.style.display = 'flex'; // Show the Lightbox
+            }
+    
+            // Function to close the Lightbox
+            function closeLightbox() {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none'; // Hide the Lightbox
+            }
+    
+            // Close Lightbox with ESC key
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeLightbox(); // Close the Lightbox
+                }
+            });
+        </script>
+    </body>
+    
+    </html>
+    
     <!-- Body End -->
+
+
+
 
     <!-- Footer Start -->
     <div class="container">
