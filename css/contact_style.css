@@ -17,3 +17,190 @@
     filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
 }
 
+.logo img {
+    width: 100%; /* ปรับให้ขนาดเป็นเปอร์เซ็นต์ของ container */
+    max-height: 100px;
+    height: 100%;
+}
+
+.background {
+    background: transparent;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-item:hover .nav-link:hover {
+    color: rgb(112, 112, 112) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
+}
+
+/* การตั้งค่าทั่วไป */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* หัวข้อ */
+h1, h2 {
+    color: #1a1a1a;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* การตั้งค่ารูปภาพ */
+.header img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* ตั้งค่าส่วนการเดินทาง */
+.section {
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    color: #000000;
+    font-size: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ลิงก์ */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* แผนที่ */
+.map {
+    text-align: center;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.map img:hover {
+    transform: scale(1.05);
+    border-color: #000000;
+}
+
+.map .fallback-text {
+    display: none;
+    color: #ff0000;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map img:invalid {
+    display: none;
+}
+
+.map img:invalid + .fallback-text {
+    display: block;
+}
+
+/* ปรับปรุงส่วนการเดินทาง */
+.transportation ul ul {
+    padding-left: 40px;
+}
+
+.transportation ul ul li::before {
+    content: '-';
+    font-size: 16px;
+    color: #333;
+}
+
+/* ปุ่มแผนที่ */
+.button {
+    display: inline-block;
+    background-color: #030303;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+/* CSS สำหรับการซูม */
+.zoom {
+    display: none; /* ซ่อนภาพซูม */
+    position: fixed; /* อยู่ในตำแหน่งที่แน่นอน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* พื้นหลังมืด */
+    z-index: 1000; /* อยู่ข้างบนสุด */
+    justify-content: center; /* จัดกลาง */
+    align-items: center; /* จัดกลาง */
+}
+
+.zoom img {
+    max-width: 90%; /* ขนาดสูงสุด */
+    max-height: 90%; /* ขนาดสูงสุด */
+}

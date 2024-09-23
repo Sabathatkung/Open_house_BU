@@ -16,3 +16,70 @@
 .navbar-toggler-icon {
     filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+.speaker {
+    background: #ffffff; /* สีพื้นหลังของกรอบ */
+    padding: 15px;
+    margin-top: 15px;
+    border: 2px solid #3d3d3d; /* เปลี่ยนกรอบเป็นสีฟ้า */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.2s;
+}
+
+.speaker:hover {
+    transform: scale(1.02); /* ขยายกรอบเมื่อ hover */
+}
+
+.speaker img {
+    width: 160px; /* ปรับขนาดภาพให้ใหญ่ขึ้น */
+    height: 160px; /* ปรับขนาดภาพให้ใหญ่ขึ้น */
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    object-fit: cover; /* ปรับให้ภาพไม่เสียสัดส่วน */
+    float: left;
+    margin-right: 20px; /* เพิ่มระยะห่างขวา */
+    border: 3px solid #ffffff; /* เพิ่มกรอบให้กับรูปภาพ */
+    padding: 5px; /* เพิ่มระยะห่างภายในกรอบรูป */
+}
+
+.speaker h2 {
+    margin: 0;
+    color: #000000;
+}
+
+.speaker p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.speaker strong {
+    color: #000;
+}
+
+/* Clearfix to handle floating elements */
+.speaker:after {
+    content: "";
+    display: table;
+    clear: both;
+}
