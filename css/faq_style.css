@@ -37,7 +37,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+  gap: 20px; 
 }
 
 .faq-item {
