@@ -14,9 +14,57 @@ body {
 }
 
 .nav-item:hover .nav-link:hover {
-    color: rgb(112, 112, 112) !important;
+    color: rgb(30, 94, 223) !important; /* เปลี่ยนสีของลิงก์เมื่อ hover */
 }
 
 .navbar-toggler-icon {
     filter: invert(1); /* เปลี่ยนสีของไอคอนเป็นสีขาว */
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    white-space: nowrap;
+    position: relative;
+}
+.logos::before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left,transparent,white);
+}
+
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right,transparent,white);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 100px;
+    margin: 0 40px;
 }
