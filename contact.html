@@ -13,71 +13,56 @@
     <link rel="stylesheet" href="css/contact_style.css" />
   </head>
   <body>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light background">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="homepage.html">
-          <img src="img/BU_Logo_no_shadow-positive1.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon fs-2"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto justify-content-end mb-2 mb-lg-0">
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="open_house.html"
-                >About</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="schedule.html"
-                >Schedule</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="speaker.html"
-                >Speaker</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="workshops.html"
-                >Workshops</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="registration.html"
-                >Registration</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="contact.html"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="nav-link text-white fs-4" href="sponsors.html"
-                >Sponsors</a
-              >
-            </li>
-          </ul>
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg navbar-light background">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="homepage.html">
+            <img src="img\BU_Logo_no_shadow-positive1.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fs-2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto justify-content-end mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fs-4 fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
+                        Event Information
+                    </a>
+                    <ul class="dropdown-menu shadow-lg border-0 dropdown-animate dropdown_head">
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="open_house.html">About</a></li>
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="schedule.html">Schedule</a></li>
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="speaker.html">Speaker</a></li>
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="workshops.html">Workshops</a></li>
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="gallery.html">Gallery</a></li>
+                        <hr style="border: 1px solid white !important; width:100%; margin:auto;">
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fs-4 fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
+                        Education & Careers
+                    </a>
+                    <ul class="dropdown-menu shadow-lg border-0 dropdown-animate dropdown_head">
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="careers_future.html">Careers Future</a></li>
+                        <li><a class="dropdown-item fs-5 text-white py-2 px-3 nav_dropdown_text" href="majors.html">Majors</a></li>
+                        <hr style="border: 1px solid white !important; width:100%; margin:auto;">
+                    </ul>
+                </li>
+                
+                <li class="nav-item ms-3">
+                    <a class="nav-link text-white fs-4 py-2 fw-bold" href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link text-white fs-4 py-2 fw-bold" href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link text-white fs-4 py-2 fw-bold" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link text-white fs-4 py-2 fw-bold" href="contact.html">Contact</a>
+                </li>
+            </ul>
+          </div>
         </div>
-      </div>
     </nav>
     <!-- Navbar End -->
 
@@ -102,35 +87,35 @@
           <h2>การเดินทาง</h2>
           <p class="fs-2">วิธีการเดินทางไปยังมหาวิทยาลัยกรุงเทพ</p>
           <p><strong>แนะนำการใช้บริการขนส่งสาธารณะ</strong></p>
-          <ul>
+          <ul class="text_ul">
             <li><strong>รถเมล์สาย 39 / 510 / 520 ไปยังรังสิต</strong></li>
             <li><strong>รถตู้สาธารณะ:</strong></li>
-            <ul>
+            <ul class="text_ul">
               <li>
-                สาย 85-93 (ฝั่งพญาไท ใกล้สถานีรถไฟฟ้าบีทีเอส อนุสาวรีย์ชัยสมรภูมิ)
+                • สาย 85-93 (ฝั่งพญาไท ใกล้สถานีรถไฟฟ้าบีทีเอส อนุสาวรีย์ชัยสมรภูมิ)
               </li>
-              <li>สาย 118-1 หมอชิต - รังสิต</li>
-              <li>สาย 1008 ฟิวเจอร์พาร์ครังสิต - รังสิต</li>
+              <li>• สาย 118-1 หมอชิต - รังสิต</li>
+              <li>• สาย 1008 ฟิวเจอร์พาร์ครังสิต - รังสิต</li>
             </ul>
             <li><strong>รถไฟฟ้าบีทีเอส (สายสีเขียว):</strong></li>
-            <ul>
+            <ul class="text_ul">
               <li>
-                สถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3-4) และขึ้นรถตู้สาย 85-93
+                • สถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3-4) และขึ้นรถตู้สาย 85-93
               </li>
               <li>
-                สถานีหมอชิต (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
+                • สถานีหมอชิต (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
               </li>
-              <li>สถานียักษ์ก.ป.อ (ทางออก 1-3) และขึ้นรถเมล์สาย 39, 520</li>
+              <li>• สถานียักษ์ก.ป.อ (ทางออก 1-3) และขึ้นรถเมล์สาย 39, 520</li>
             </ul>
             <li><strong>รถไฟฟ้า MRT (สายสีน้ำเงิน):</strong></li>
-            <ul>
+            <ul class="text_ul">
               <li>
-                สถานีจตุจักร (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
+                • สถานีจตุจักร (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
               </li>
             </ul>
             <li><strong>รถไฟฟ้า SRT (สายสีแดง):</strong></li>
-            <ul>
-              <li>สถานีรังสิต (ทางออก 3) และขึ้นมินิบัสสาย รังสิต-จารุศร</li>
+            <ul class="text_ul">
+              <li>• สถานีรังสิต (ทางออก 3) และขึ้นมินิบัสสาย รังสิต-จารุศร</li>
             </ul>
           </ul>
         </div>
