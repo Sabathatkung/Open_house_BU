@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/contact_style.css" />
-    <style></style>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -83,124 +82,126 @@
     <!-- Navbar End -->
 
     <!-- Body Start -->
-    <div class="container">
-      <div class="header section">
-        <h1>มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต</h1>
-        <p>9/1 หมู่ 5 ถนนพหลโยธิน ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 12120</p>
-        <img src="img/BU.jpg" alt="มหาวิทยาลัยกรุงเทพ" />
-        <p>
-          <a
-            href="https://maps.app.goo.gl/kEZwrW51K4BqDnhg9"
-            target="_blank"
-            class="button"
-            >ดูแผนที่ใน Google Map</a
-          >
-        </p>
+    <main>
+      <div class="container container_body">
+        <div class="header section">
+          <h1>มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต</h1>
+          <p>9/1 หมู่ 5 ถนนพหลโยธิน ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 12120</p>
+          <img src="img/BU.jpg" alt="มหาวิทยาลัยกรุงเทพ" />
+          <p>
+            <a
+              href="https://maps.app.goo.gl/kEZwrW51K4BqDnhg9"
+              target="_blank"
+              class="button"
+              >ดูแผนที่ใน Google Map</a
+            >
+          </p>
+        </div>
+
+        <div class="transportation section">
+          <h2>การเดินทาง</h2>
+          <p class="fs-2">วิธีการเดินทางไปยังมหาวิทยาลัยกรุงเทพ</p>
+          <p><strong>แนะนำการใช้บริการขนส่งสาธารณะ</strong></p>
+          <ul>
+            <li><strong>รถเมล์สาย 39 / 510 / 520 ไปยังรังสิต</strong></li>
+            <li><strong>รถตู้สาธารณะ:</strong></li>
+            <ul>
+              <li>
+                สาย 85-93 (ฝั่งพญาไท ใกล้สถานีรถไฟฟ้าบีทีเอส อนุสาวรีย์ชัยสมรภูมิ)
+              </li>
+              <li>สาย 118-1 หมอชิต - รังสิต</li>
+              <li>สาย 1008 ฟิวเจอร์พาร์ครังสิต - รังสิต</li>
+            </ul>
+            <li><strong>รถไฟฟ้าบีทีเอส (สายสีเขียว):</strong></li>
+            <ul>
+              <li>
+                สถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3-4) และขึ้นรถตู้สาย 85-93
+              </li>
+              <li>
+                สถานีหมอชิต (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
+              </li>
+              <li>สถานียักษ์ก.ป.อ (ทางออก 1-3) และขึ้นรถเมล์สาย 39, 520</li>
+            </ul>
+            <li><strong>รถไฟฟ้า MRT (สายสีน้ำเงิน):</strong></li>
+            <ul>
+              <li>
+                สถานีจตุจักร (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
+              </li>
+            </ul>
+            <li><strong>รถไฟฟ้า SRT (สายสีแดง):</strong></li>
+            <ul>
+              <li>สถานีรังสิต (ทางออก 3) และขึ้นมินิบัสสาย รังสิต-จารุศร</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="map section">
+          <h2>MAP Bangkok University</h2>
+          <img
+            id="zoomableImage"
+            src="img/BUMAP.jpg"
+            alt="แผนที่มหาวิทยาลัยกรุงเทพ"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            style="cursor: pointer"
+          />
+        </div>
       </div>
 
-      <div class="transportation section">
-        <h2>การเดินทาง</h2>
-        <p class="fs-2">วิธีการเดินทางไปยังมหาวิทยาลัยกรุงเทพ</p>
-        <p><strong>แนะนำการใช้บริการขนส่งสาธารณะ</strong></p>
-        <ul>
-          <li><strong>รถเมล์สาย 39 / 510 / 520 ไปยังรังสิต</strong></li>
-          <li><strong>รถตู้สาธารณะ:</strong></li>
-          <ul>
-            <li>
-              สาย 85-93 (ฝั่งพญาไท ใกล้สถานีรถไฟฟ้าบีทีเอส อนุสาวรีย์ชัยสมรภูมิ)
-            </li>
-            <li>สาย 118-1 หมอชิต - รังสิต</li>
-            <li>สาย 1008 ฟิวเจอร์พาร์ครังสิต - รังสิต</li>
-          </ul>
-          <li><strong>รถไฟฟ้าบีทีเอส (สายสีเขียว):</strong></li>
-          <ul>
-            <li>
-              สถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3-4) และขึ้นรถตู้สาย 85-93
-            </li>
-            <li>
-              สถานีหมอชิต (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
-            </li>
-            <li>สถานียักษ์ก.ป.อ (ทางออก 1-3) และขึ้นรถเมล์สาย 39, 520</li>
-          </ul>
-          <li><strong>รถไฟฟ้า MRT (สายสีน้ำเงิน):</strong></li>
-          <ul>
-            <li>
-              สถานีจตุจักร (ทางออก 3-4) และขึ้นรถตู้สาย 118-1 (หมอชิต - รังสิต)
-            </li>
-          </ul>
-          <li><strong>รถไฟฟ้า SRT (สายสีแดง):</strong></li>
-          <ul>
-            <li>สถานีรังสิต (ทางออก 3) และขึ้นมินิบัสสาย รังสิต-จารุศร</li>
-          </ul>
-        </ul>
+      <!-- Zoom Container -->
+      <div class="zoom" id="zoomContainer" onclick="closeZoom()">
+        <img id="zoomedImage" src="" alt="Zoomed Image" />
       </div>
 
-      <div class="map section">
-        <h2>MAP Bangkok University</h2>
-        <img
-          id="zoomableImage"
-          src="img/BUMAP.jpg"
-          alt="แผนที่มหาวิทยาลัยกรุงเทพ"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-          style="cursor: pointer"
-        />
-      </div>
-    </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      
+      <script>
+        const zoomContainer = document.getElementById("zoomContainer");
+        const zoomedImage = document.getElementById("zoomedImage");
 
-    <!-- Zoom Container -->
-    <div class="zoom" id="zoomContainer" onclick="closeZoom()">
-      <img id="zoomedImage" src="" alt="Zoomed Image" />
-    </div>
+        document.getElementById("zoomableImage").onclick = function () {
+          zoomedImage.src = this.src; // ตั้งค่าภาพซูม
+          zoomContainer.style.display = "flex"; // แสดงภาพซูม
+        };
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    
-    <script>
-      const zoomContainer = document.getElementById("zoomContainer");
-      const zoomedImage = document.getElementById("zoomedImage");
-
-      document.getElementById("zoomableImage").onclick = function () {
-        zoomedImage.src = this.src; // ตั้งค่าภาพซูม
-        zoomContainer.style.display = "flex"; // แสดงภาพซูม
-      };
-
-      function closeZoom() {
-        zoomContainer.style.display = "none"; // ซ่อนภาพซูมเมื่อคลิก
-      }
-    </script>
-  </body>
+        function closeZoom() {
+          zoomContainer.style.display = "none"; // ซ่อนภาพซูมเมื่อคลิก
+        }
+      </script>
+    </main>
 
   <!-- Body End -->
 
-  <!-- Footer Start -->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a
-            href="homepage.html"
-            class="nav-link px-2 text-body-secondary text-dark"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="faq.html" class="nav-link px-2 text-body-secondary text-dark"
-            >FAQs</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            href="open_house.html"
-            class="nav-link px-2 text-body-secondary text-dark"
-            >About</a
-          >
-        </li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2024 BU Open House, Inc</p>
-    </footer>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer Start -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a
+              href="homepage.html"
+              class="nav-link px-2 text-body-secondary text-dark"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link px-2 text-body-secondary text-dark"
+              >FAQs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="open_house.html"
+              class="nav-link px-2 text-body-secondary text-dark"
+              >About</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 BU Open House, Inc</p>
+      </footer>
+    </div>
+    <!-- Footer End -->
+  </body>
 </html>
